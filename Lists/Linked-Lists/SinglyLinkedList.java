@@ -12,6 +12,14 @@ public class SinglyLinkedList {
         }
     }
 
+    public void display(){
+        ListNode temp = head;
+        while(temp != null){
+            System.out.print(temp.data + " --> ");
+            temp = temp.next;}
+        System.out.print("null");
+    }
+
     // Tester
     public static void main(String[] args){
 
@@ -24,11 +32,9 @@ public class SinglyLinkedList {
         sll.head.next = two;
         two.next = three;
         three.next = four;
+        sll.display();
 
-        ListNode temp = sll.head;
-        while(temp != null){
-            System.out.println(temp.data);
-            temp = temp.next;
-        }
+        
+        
     }
 }
