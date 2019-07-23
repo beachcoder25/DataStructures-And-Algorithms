@@ -11,6 +11,8 @@ public class SinglyLinkedList {
             this.next = null;
         }
     }
+
+    // Tester
     public static void main(String[] args){
 
         SinglyLinkedList sll = new SinglyLinkedList();
