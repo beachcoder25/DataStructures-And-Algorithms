@@ -37,7 +37,7 @@ public class MergeTwoLists {
         
         if(l1 == null){curr.next = l2;}
         else if(l2 == null){curr.next = l1;}
-        //System.out.print("End of func");
+
         return temp.next;
     }
     // Tester
@@ -53,7 +53,7 @@ public class MergeTwoLists {
         sll0.head.next = two;
         two.next = three;
         three.next = four;
-        //System.out.print("End of func");
+
         sll01.head = new ListNode(3);
         ListNode two_01 = new ListNode(4);
         ListNode three_01 = new ListNode(9);
